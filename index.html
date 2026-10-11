@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Student Registration Form</title>
+
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>College Student Registration Form</h2>
+
+    <form action="#" method="POST" enctype="multipart/form-data">
+      <table>
+        <tr>
+          <td class="label-col">Student Name:</td>
+          <td><input type="text" name="studentName" required></td>
+        </tr>
+
+        <tr>
+          <td class="label-col">Register Number:</td>
+          <td><input type="text" name="registerNumber" required></td>
+        </tr>
+
+        <tr>
+          <td class="label-col">Email Address:</td>
+          <td><input type="email" name="emailAddress" required></td>
+        </tr>
+
+        <tr>
+          <td class="label-col">Mobile Number:</td>
+          <td><input type="tel" name="mobileNumber" required></td>
+        </tr>
+
+        <tr>
+          <td class="label-col">Date of Birth:</td>
+          <td><input type="date" name="dob" required></td>
+        </tr>
+
+        <tr>
+          <td class="label-col">Gender:</td>
+          <td>
+            <input type="radio" name="gender" value="Male" required> Male &nbsp;&nbsp;
+            <input type="radio" name="gender" value="Female"> Female
+          </td>
+        </tr>
+
+        <tr>
+          <td class="label-col">Department:</td>
+          <td>
+            <select name="department" required>
+              <option value="CSE" selected>CSE</option>
+              <option value="ECE">ECE</option>
+              <option value="EEE">EEE</option>
+              <option value="MECH">MECH</option>
+              <option value="CIVIL">CIVIL</option>
+              <option value="IT">IT</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="label-col">Skills Known:</td>
+          <td>
+            <input type="checkbox" name="skills" value="HTML"> HTML &nbsp;&nbsp;
+            <input type="checkbox" name="skills" value="CSS"> CSS &nbsp;&nbsp;
+            <input type="checkbox" name="skills" value="JavaScript"> JavaScript &nbsp;&nbsp;
+            <input type="checkbox" name="skills" value="Python"> Python
+          </td>
+        </tr>
+
+        <tr>
+          <td class="label-col" valign="top">Address:</td>
+          <td><textarea name="address" rows="4"></textarea></td>
+        </tr>
+
+        <tr>
+          <td class="label-col">Upload Profile Photo:</td>
+          <td><input type="file" name="profilePhoto" accept="image/*"></td>
+        </tr>
+
+        <tr>
+          <td class="label-col">Create Password:</td>
+          <td><input type="password" name="createPassword" required></td>
+        </tr>
+
+        <tr>
+          <td class="label-col">Confirm Password:</td>
+          <td><input type="password" name="confirmPassword" required></td>
+        </tr>
+      </table>
+
+      <div class="button-group">
+        <button type="submit" class="btn-submit">Submit</button>
+        <button type="reset" class="btn-reset">Reset</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
